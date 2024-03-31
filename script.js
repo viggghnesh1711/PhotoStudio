@@ -191,12 +191,7 @@
       page6.style.display="none";
       page6.style.opacity="0";
    });
-   
-    const scroll = new LocomotiveScroll({
-      el: document.querySelector('.main'),
-      smooth: true, // Enable smooth scrolling
-      // Add more options as needed
-  });
+
 
   function swipe(){
    const mediaQuery = window.matchMedia('(max-width: 600px)');
@@ -221,7 +216,8 @@ if (mediaQuery.matches) {
     });
 }
   }
-
+swipe();
+bar();
 function bar(){
    var nav = document.querySelector(".nav2 h2 i");
    var over = document.querySelector(".overflower");
